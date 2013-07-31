@@ -26,6 +26,18 @@ get '/simpsons' do
   erb :simpsons_view
 end
 
+get '/simpsons/:name' do
+  @s = list_of_simpsons.select {|s| s[:name].downcase == params[:name]}.first
+  if @s
+    # we have a simpson
+    erb :single_simpson_view
+  else
+    # they gave a bad name
+    erb :missing_simpson_view
+  end
+
+end
+
 def list_of_countries
   [ 
     ["UK", "London"],
