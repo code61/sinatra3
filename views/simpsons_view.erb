@@ -1,4 +1,27 @@
-<h1>List of Simpsons</h1>
 
-<!-- put your profiles here -->
+<h1>List of Simpsons</h1>
+<div class='row'>
+    <% @simpsons.each do |s| %>
+    <div class='col-4'>
+        <img src="<%= s[:pic] %>" class="img-rounded">
+        <h2><%= s[:name] %></h2>
+        <table class='table-bordered'>
+            <tr>
+                <td>Age</td>
+                <td><%= s[:age] %></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><%= s[:gender]%></td>
+            </tr>
+            <tr>
+                <td>Catchphrase</td>
+                <td><%= s[:catchphrase]%></td>
+            </tr>
+        </table>
+
+
+    </div>
+    <% end %>
+</div>
 

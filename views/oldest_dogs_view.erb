@@ -1,8 +1,10 @@
 <h1>List of oldest dogs</h1>
 
-<!-- put your list here -->
 
-
-
+<ul class='list-group'>
+    <% @dogs.each do |dog| %>
+        <li class='list-group-item'><%= dog %></li>
+    <% end %>
+</ul>
 
 <p>For more info see <a href="http://en.wikipedia.org/wiki/List_of_oldest_dogs">here</a>.</p>

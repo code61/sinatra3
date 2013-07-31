@@ -1,3 +1,16 @@
 <h1>List of countries</h1>
 
-<!-- put your table here -->
+
+<table class='table table-bordered table-hover'>
+    <thead>
+        <tr><th>Country</th><th>Capital</th></tr>
+    </thead>
+    <tbody>
+        <% @countries.each do |country| %>
+        <tr>
+            <td><%= country[0]%></td>
+            <td><%= country[1]%></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
