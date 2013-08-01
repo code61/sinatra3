@@ -39,7 +39,7 @@ end
 
 def list_of_simpsons
   [
-    { :name => "Homer", :age => 38, :gender => "M", :catchphrase => "D'oh!", :pic => "http://simpsons.wikia.com/wiki/Homer_Simpson?file=Homer_Simpson.png"},
+    { :name => "Homer", :age => 38, :gender => "M", :catchphrase => "D'oh!", :pic => "http://images.wikia.com/simpsons/images/b/bd/Homer_Simpson.png"},
     { :name => "Marge", :age => 34, :gender =>"F" , :catchphrase => "Hmm...", :pic =>"http://images.wikia.com/simpsons/images/0/0b/Marge_Simpson.png"},
     { :name => "Bart", :age => 10, :gender => "M", :catchphrase =>  "Eat My Shorts!", :pic =>"http://images.wikia.com/simpsons/images/6/65/Bart_Simpson.png"},
     { :name => "Lisa", :age =>8, :gender =>"F", :catchphrase => "Trust in yourself and you can achieve anything.", :pic =>"http://images.wikia.com/simpsons/images/5/57/Lisa_Simpson2.png"},
